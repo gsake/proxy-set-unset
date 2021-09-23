@@ -26,9 +26,9 @@ if [ $1 == "set" ]
 then
 	# Set environment proxy
 	echo "Set proxy to the environment"
-	export http_proxy=${PROXY}
-	export https_proxy=${PROXY}
-	export no_proxy=localhost,127.0.0.1,localaddress,.localdomain.com
+	export http_proxy="${PROXY}"
+	export https_proxy="${PROXY}"
+	export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
 
 	# Set git proxy
 	if command -v git &> /dev/null

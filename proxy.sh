@@ -67,10 +67,9 @@ elif [ $1 == "unset" ]
 then
 	# Unset environment proxy
 	echo "Unset proxy from environment"
-	export http_proxy=""
-	export https_proxy=""
-	export no_proxy=""
-
+	unset http_proxy
+	unset https_proxy
+	unset no_proxy
 
 	# Unset git proxy
 	if command -v git &> /dev/null

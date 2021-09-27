@@ -1,6 +1,6 @@
 # Proxy-Script
 
-This script is used to set/unset the proxy settings in a development environment
+This script is used to set/unset the proxy settings in a WSL development environment
 
 Installation: 
 * chmod 755 proxy.sh
